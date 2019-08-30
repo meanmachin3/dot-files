@@ -96,6 +96,12 @@ inoremap jj <Esc>
 "make esc do nothing"
 inoremap <Esc> <Nop>
 
+" Set hybrid numbering
+:set relativenumber
+:set number
+:set number relativenumber
+
+
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
