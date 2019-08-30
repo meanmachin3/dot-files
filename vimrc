@@ -90,6 +90,12 @@ set listchars=tab:▸\ ,eol:¬
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
+"make jj do esc"
+inoremap jj <Esc>
+
+"make esc do nothing"
+inoremap <Esc> <Nop>
+
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
