@@ -66,3 +66,7 @@ brew install zsh-completions
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
+#Install node
+brew install node
+npm install -g commitizen
+
