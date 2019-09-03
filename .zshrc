@@ -7,3 +7,13 @@ alias reload="exec ${SHELL} -l"
 
 # Brew
 alias bup="brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade"
+
+# Find files in subdirectories and delete
+fsubd () {
+  find . -name "$1" -type f -delete
+}
+
+# Find files in subdirectories
+fsub () {
+  find . -name "$1" -type f
+}
