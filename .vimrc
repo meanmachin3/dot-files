@@ -90,18 +90,6 @@ set listchars=tab:▸\ ,eol:¬
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
-"make jj do esc"
-inoremap jj <Esc>
-
-"make esc do nothing"
-inoremap <Esc> <Nop>
-
-" Set hybrid numbering
-:set relativenumber
-:set number
-:set number relativenumber
-
-
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
@@ -110,3 +98,15 @@ let g:solarized_termtrans=1
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
+
+"make jj do esc"
+inoremap jj <Esc>
+
+"make esc do nothing"
+inoremap <Esc> <Nop>
+
+"Disable arrow keys to avoid bad habits"
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>

@@ -89,6 +89,9 @@ npm install -g commitizen
 npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
+npm install -g diff-so-fancy
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
 # Configure dock
 printf "Configuring Dock...\n"
 printf "Dock: set icon size\n"
