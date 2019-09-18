@@ -110,3 +110,13 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+" specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'junegunn/fzf.vim'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+
+set rtp+=/usr/local/opt/fzf
