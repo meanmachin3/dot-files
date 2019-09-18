@@ -56,6 +56,9 @@ code --install-extension JaimeOlivares.yuml
 printf "Installing Git...\n"
 brew install git
 
+#Installing fzf
+brew install fzf
+
 #Installing Python
 printf "Installing Python3...\n"
 brew install python3
@@ -228,4 +231,3 @@ printf "Notifications: set banner time to 3 seconds\n"
 defaults write com.apple.notificationcenterui bannerTime 3
 printf "FileVault: Enable encryption\n"
 sudo fdesetup enable
-
