@@ -100,10 +100,10 @@ let g:solarized_termtrans=1
 " colorscheme solarized
 
 "make jj do esc"
-inoremap jj <Esc>
+"inoremap jj <Esc>
 
 "make esc do nothing"
-inoremap <Esc> <Nop>
+"inoremap <Esc> <Nop>
 
 "Disable arrow keys to avoid bad habits"
 nnoremap <Left> :echoe "Use h"<CR>
@@ -120,3 +120,9 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+set clipboard+=unnamedplus
