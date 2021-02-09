@@ -22,3 +22,10 @@ To install, run the following command
 ```bash
 ./setup.sh
 ```
+
+To install vim plugins, install vim-plug using 
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
