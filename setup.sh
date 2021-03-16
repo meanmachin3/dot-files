@@ -28,13 +28,13 @@ brew tap homebrew/cask-fonts
 
 #Installing Developing tools
 printf "Installing Docker.app...\n"
-brew cask install --appdir="/Applications" docker
+brew install --cask --appdir="/Applications" docker
 printf "Installing iTerm2.app...\n"
-brew cask install --appdir="/Applications" iterm2
+brew install --cask --appdir="/Applications" iterm2
 
 #Installing Editor apps
 printf "Installing Visual Studio Code.app...\n"
-brew cask install --appdir="/Applications" visual-studio-code
+brew install --cask --appdir="/Applications" visual-studio-code
 
 #Install Extensions
 printf "Installing Visual Studio Code packages...\n"
