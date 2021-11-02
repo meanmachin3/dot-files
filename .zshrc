@@ -102,14 +102,6 @@ source $ZSH/oh-my-zsh.sh
 autoload -U promptinit; promptinit
 prompt spaceship
 
-fsubd () {
-  find . -name "$1" -type f -delete
-}
-
-fsub () {
-  find . -name "$1" -type f
-}
-
 alias reload="exec -l $SHELL"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
@@ -124,12 +116,7 @@ alias gbda='git branch --no-color --merged | command grep -vE "^(\*|\s*(master|d
 # Brew
 alias bup="brew doctor && brew update && brew upgrade && brew cleanup && mas upgrade"
 
-# Find files in subdirectories and delete
-fsubd () {
-  find . -name "$1" -type f -delete
-}
-
-# Find files in subdirectories
-fsub () {
-  find . -name "$1" -type f
-}
+# add ~/.my_zsh_functions to fpath, and then lazy autoload
+# every file in there as a function
+fpath=(~/.my_zsh_functions $fpath);
+autoload -U $fpath[1]/*(.:t)
