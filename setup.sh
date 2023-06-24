@@ -31,6 +31,10 @@ printf "Installing Docker.app...\n"
 brew install --cask --appdir="/Applications" docker
 printf "Installing iTerm2.app...\n"
 brew install --cask --appdir="/Applications" iterm2
+printf "Installing Raycast"
+brew install --cask raycast --appdir="/Applications" raycast
+printf "Installing Obsidian.md"
+brew install --cask obsidian --appdir="/Applications" obsidian
 
 #Installing Editor apps
 printf "Installing Visual Studio Code.app...\n"
