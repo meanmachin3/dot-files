@@ -35,6 +35,10 @@ printf "Installing Raycast"
 brew install --cask raycast --appdir="/Applications" raycast
 printf "Installing Obsidian.md"
 brew install --cask obsidian --appdir="/Applications" obsidian
+printf "Install Firefox"
+brew install --cask firefox --appdir="/Applications" firefox
+printf "Install Rectangle"
+brew install --cask rectangle --appdir="/Applications" rectangle 
 
 #Installing Editor apps
 printf "Installing Visual Studio Code.app...\n"
